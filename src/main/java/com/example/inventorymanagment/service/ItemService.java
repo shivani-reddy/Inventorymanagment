@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @Service
-public class itemService {
+public class ItemService {
 
     @Autowired
     private ItemRepository itemRepo;
@@ -18,7 +18,7 @@ public class itemService {
         return itemRepo.findAll();
     }
 
-   // public  Item addItem(Item item) {
-      //  return itemRepo.save(item);
-    //}
+   public  Item addItem(Item item) {
+      return itemRepo.save(item);
+    }
 }
