@@ -24,4 +24,9 @@ public class ItemController {
         return itemService.addItem(item);
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteItem(@PathVariable Long id){
+        itemService.deleteItem(id);
+    }
+
 }
